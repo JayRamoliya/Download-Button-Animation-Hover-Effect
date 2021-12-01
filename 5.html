@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Button Animation Hover Effect</title>
+    <style>
+        body {
+            background: #fffbf2;
+        }
+
+        .icon {
+            margin-right: 15px;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .download {
+            background: #f5900e;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #040a24;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 70px;
+            transition: .3s ease-in-out all;
+        }
+
+        .top,
+        .bottom {
+            display: block;
+            padding: 0 30px;
+            line-height: 70px;
+            transition: .35s margin linear;
+        }
+
+        .download:hover {
+            box-sizing: 3px 3px 3px #a3a3a3;
+            transform: translateY(-4px);
+        }
+
+        .download:hover .top {
+            margin-top: -70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="" class="download">
+            <div class="top">
+                <span><i class="fas fa-colud-download-alt icon"></i></span>Download
+            </div>
+            <div class="bottom">
+                <span><i class="fas fa-sd-card icon"></i></span>Size: 20gb
+            </div>
+        </a>
+
+    </div>
+</body>
+
+</html>
